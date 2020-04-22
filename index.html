@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Zarifa Rasullu</title>
+</head>
+
+<body>
+    <!-- //umumi container -->
+    <div class=" first container mt-3">
+        <!-- header hisse -->
+        <header class="header d-flex justify-content-md-between justify-content-center border border-info border-md-warning">
+
+
+            <div class="header__logo  d-flex d-md-block flex-column">
+                <img src="images/articolo.png" width="50%" class=" ml-5 mb-4 mr-n5" />
+
+                <div class="dropdown ml-5 mr-2 w-50 d-flex justify-content-center h-100 d-md-none">
+                    <button class="btn border mt-n3 h-25" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-caret-down fa-3x d-md-none border h-25">
+                    
+                        </i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="second.html" class="p-1">About The Project</a>
+                        <a href="https://github.com/razarifa/Articolo" class="p-1"> Repository</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="header__menu col-6 d-none justify-content-center align-items-center d-md-flex ">
+                <div class="header__menu-item ml-3">
+                    <a href="second.html" class="p-1">About The Project</a>
+                </div>
+
+                <div class="header__menu-item ml-3">
+                    <a href="https://github.com/razarifa/Articolo" class="p-1"><i class="fa fa-github"> Repository  </i>
+
+                    </a>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- main hisse -->
+        <main>
+            <div class="d-flex justify-content-center">
+                <div class="h main__word col-9 text-center" id="hero">
+                    <h1 class="d-none d-md-block">
+                        <span class="txt-rotate display-4" data-period="2" data-rotate='[ "Just type the keyword below  "]'></span>
+                    </h1>
+                    <p class="d-md-none mt-3 ">
+                        <span class="txt-rotate display-4" data-period="2" data-rotate='[ " Just  ",  " type  "," the  "," keyword  ","below "]'></span>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="search">
+                <div class="d-flex justify-content-center  mb-5 input__container" id="input__container">
+                    <div class="main__input rounded text-center">
+                        <form class="form-group text-center d-flex flex-column align-items-center mt-4">
+                            <h1 class="d-flex flex-column w-50 mt-2" id="input__h1">
+                                <input type="text" placeholder="keyword" class="mt-1 w-100 p-2 border border-success btn " id="main__input">
+
+
+                            </h1>
+                            <div class="button-div btn btn-warning" id="button-div">Search For The Articles</div>
+                            <div>
+
+                                <div class=" d-flex mt-5 justify-content-center  p-3 w-100 flex-column flex-md-row">
+                                    <div>
+                                        From <input class="form-control mr-1" type="date" id="example-date-input1">
+                                    </div>
+                                    <div class="ml-1">
+                                        To<input class="form-control" type="date" id="example-date-input">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>Lang</option>
+                                    <option value="de">De</option>
+                                    <option value="en">En</option>
+                                    <option value="fr">Fr</option>
+                                    <option value="he">He</option>
+                                    <option value="it">It</option>
+                                    <option value="nl">Nl</option>
+                                    <option value="no">No</option>
+                                    <option value="pt">Pt</option>
+                                    <option value="ru">Ru</option>
+                                    <option value="se">Se</option>
+                                    <option value="ud">Ud</option>
+                                    <option value="zh">Zh</option>
+
+                                   
+                                  </select>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="second d-flex flex-column border border-warning mb-4" id="second">
+        <div class=" justify-content-center d-flex mt-n4"><img src="images/articolo3.png" alt="" width="150px"></div>
+        <div class="container d-flex h-100">
+
+            <div class="article-container d-flex col-12 flex-column mt-5 " id="article-container"></div>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- footer hisse -->
+    <footer>
+
+    </footer>
+
+
+    <script src="/Bootstrap/js/index.js"></script>
+    <script src="/Bootstrap/js/hero.js "></script>
+</body>
+
+</html>
